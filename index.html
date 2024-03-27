@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <p class = "name">EATON</p>
+            <ul class = "nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class = "intro">
+        <div class = "intro-content">
+            <div class = "introduction">
+                <h1 class = "name">Nicholas Eaton</h1>
+                <p>Hello, I'm a junior studying Computer Science at the University of Michigan. Passionate about the ever-evolving world of technology, I am deeply engaged in exploring the intersections of theory and practice within the realm of computer science.</p>
+                <div class = "social-buttons"> 
+                        <a href = "https://www.linkedin.com/in/nicholas-eaton-4b6165113/" class="linkedin-button"> <img src="images/linkedinlogo.png" alt = "linkedin logo"> LinkedIn</a>
+                        <a href = "https://github.com/naeaton" class = "github-button"> <img src="images/githublogo.png" alt = "github logo"> GitHub</a>
+                        <a href="images/resume.pdf" class = "resume-button" target="_blank"> <img src ="images/resumelogo.png" alt = "piece of paper that represents a resume"> Resume</a>
+                        <script>
+                            document.getElementById('resume-button').addEventListener('click', function() {
+                                window.open('images/resume.pdf', '_blank');
+                            });
+                        </script>
+                </div>  
+            </div>
+            <img class ="arc" src="images/intro.jpg" alt = "Photo of me standing in front of Arc de Triumph in Paris, France" />
+        </div>
+    </section>
+    <section id="about">
+        <h1>Background</h1>
+    </section>
+
+
+        <section id="portfolio">
+            <h1>Project Work</h1>
+            <div class = "projects">
+                <div class = "project">
+                    <div class = "loan">
+                        <h2>Loan Approval Model</h2>
+                        <p>Using SQL and Python's pandas library, I cleaned and analyzed loan data extracted from Microsoft Access. After preprocessing, I trained a predictive model to determine loan approval likelihood based on applicant characteristics. Key features influencing approval were identified, offering insights into lending decisions. The model achieved an accuracy rate of 95%.</p>
+                    
+                        <ul class = "languages">
+                            <li><img class = "sql" src="images/sql.png" alt = "SQL Logo" ></li>
+                            <li><img class = "python" src="images/python.svg" alt = "Python Logo" ></li>
+                        </ul>
+                    </div>    
+                </div>   
+                <div class = "project">
+                    <div class = "assembler">
+                        <h2>LC2K Assembler</h2>
+                        <p>I developed an assembler for LC2K assembly files. It processes the code, creating object files for each, and then links them into a unified executable. This simplifies the conversion of LC2K assembly code into a single, runnable program.
+                        </p>
+
+                        <ul class = "languages">
+                            <li><img class = "c" src="images/C.png" alt = "C Logo" ></li>
+                            <li class = "a">Assembly</li>
+                        </ul>
+                    </div>
+                </div>    
+                <div class = "project">
+                    <div class = "bank">
+                        <h2>Banking Backend</h2>
+                        <p>I developed a banking backend system that securely manages user balances, login credentials, and tracks login attempts. The system features a query-like interface enabling users to simulate transactions and other banking operations, providing a realistic banking experience in a simulated environment.
+                        </p>
+
+                        <ul class = "languages">
+                            <li><img class = "cpp" src="images/cpp.webp" alt = "C++ Logo" ></li>
+                        </ul>
+                    </div>
+                </div>    
+                <div class = "project">
+                    <div class = "tracker">
+                        <h2>Real-Time Room Occupancy Tracker</h2>
+                        <p>This project developed a real-time room occupancy tracking system using laser sensors, a Raspberry Pi, Python scripting, and web development technologies. Laser sensors, connected via a breadboard to a Raspberry Pi, accurately detected movement at entry points. Python scripts processed sensor data to maintain a 95% accurate count of people entering and exiting the room. An HTML/CSS web application provided users with an intuitive interface to access real-time occupancy information. This system offers versatile applications in various settings like offices and public venues, providing reliable and accessible occupancy monitoring.</p>
+
+                        <ul class = "languages">
+                            <li><img class = "python" src="images/python.svg" alt = "Python Logo" ></li>
+                            <li><img class = "html" src="images/html.png" alt = "HTML Logo" ></li>
+                            <li><img class = "css" src="images/css.png" alt = "CSS Logo" ></li>
+                            <li><img class = "rpi" src="images/raspberry-pi.svg" alt = "Raspberry Pi Logo" ></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "project">
+                    <div class = "ccp">
+                        <h2>Travel Information Website</h2>
+                        <p> I developed a website using HTML, CSS, and JavaScript showcasing travel information for specific destinations. Each page highlights details about different places, offering visitors a visually appealing and interactive experience to explore various travel spots.</p>
+
+                        <ul class = "languages">
+                            <li><img class = "html" src="images/html.png" alt = "HTML Logo" ></li>
+                            <li><img class = "css" src="images/css.png" alt = "CSS Logo" ></li>
+                            <li><img class = "js" src="images/JavaScript-logo.png" alt = "JavaScript Logo"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "project">
+                    <div class = "maze">
+                        <h2>3D Maze Solver</h2>
+                        <p>I developed a solution for navigating 3D mazes using Breadth-First Search (BFS) and Depth-First Search (DFS) algorithms to find optimal routes. This program efficiently explores maze structures, providing users with the shortest or deepest paths from start to finish. The implementation showcases algorithmic proficiency and practical applications in solving complex spatial puzzles.</p>
+
+                        <ul class = "languages">
+                            <li><img class = "cpp" src="images/cpp.webp" alt = "C++ Logo" ></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "project">
+                    <div class = "football">
+                        <h2>Football Statistics</h2>
+                        <p>Using R, I analyzed scores from an Excel dataset for the University of Michigan and Ohio State football teams. Statistical tests were conducted to determine if one team outperformed the other in the past year. The results showed no statistically significant difference in performance between the two rivals, shedding light on the parity in their recent performances.</p>
+
+                        <ul class = "languages">
+                            <li><img class = "r" src="images/r.svg" alt = "R Logo" ></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "project">
+                    <div class = "web">
+                        <h2>Web Server for Office Hours Queue</h2>
+                        <p>This project involved developing a server that processed JSON input requests from clients. Upon receiving an HTTP request containing JSON data, the server deserialized it, modified an internal data structure accordingly, created a response, serialized it back to JSON format, and sent it back to the client. This streamlined process facilitated efficient communication between clients and the server, showcasing effective handling of JSON-formatted data for web-based applications.
+</p>
+
+                        <ul class = "languages">
+                            <li><img class = "cpp" src="images/cpp.webp" alt = "C++ Logo" ></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section id="courses">
+        <h1>Coursework</h1>
+    </section>
+
+    <section id="music-area">
+        <p>Some Songs I Like</p>
+        <div class="music">
+            <div class="music-container">
+                <iframe src="https://open.spotify.com/embed/track/6RJdYpFQwLyNfDc5FbjkgV?utm_source=generator" width="100%" height="250px" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="music-container">
+                <iframe src="https://open.spotify.com/embed/track/3azJifCSqg9fRij2yKIbWz?utm_source=generator" width="100%" height="250px" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="music-container">
+                <iframe src="https://open.spotify.com/embed/track/2aSC2xhRxOLiiZZVjhbylH?utm_source=generator" width="100%" height="250px" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="music-container">
+                <iframe src="https://open.spotify.com/embed/track/70wYA8oYHoMzhRRkARoMhU?utm_source=generator&theme=0" width="100%" height="250px" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="js-playground">
+        <h1>JavaScript Playground</h1>
+        <div class = "apple-calc">
+            <div class = "playground-title">
+            <p> Apple Style Calculator </p>
+            <img src="images/JavaScript-logo.png" alt="JavaScript Logo">
+            </div>
+        <div class = "calc">
+            <input type="text" id="display" readonly>
+            <div class = "buttons">
+                <button class="extra" onclick="clearDisplay()">C</button>
+                <button class="extra" onclick="invert()">&#177</button>
+                <button class="extra" onclick="percent()">%</button>
+                <button class="operator" onclick="appendToDisplay('/')">&#247</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button class="operator" onclick="appendToDisplay('*')">x</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button  class="operator"onclick="appendToDisplay('-')">-</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button class="operator" onclick="appendToDisplay('+')">+</button>
+                <button class="zero" onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button class="operator" onclick="calculate()">=</button>
+            <div>
+        </div>    
+        </div>
+    </section>   
+    <section class = "contact">
+    <h1>Contact Me</h1>
+
+    <form class = "mail"
+        action="https://formspree.io/f/xnqezrny"
+        method="POST"
+    >
+    <label>
+        <input type="email" name="email" placeholder="Email Address" required>
+    </label>
+    <label>
+        <input type="text" name="subject" placeholder="Subject" required>
+    </label>    
+    <label>
+        <textarea name="message" placeholder="Message" required></textarea>
+    </label>
+    <button type="submit">Send</button>
+</form>
+</section>
+    <footer>
+        <p>&copy; 2024 Eaton. All rights reserved.</p>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
