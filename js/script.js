@@ -49,3 +49,7 @@ const display = document.getElementById("display");
             display.value = "Error";
         }
     }
+    
+function openStarWars(){
+    window.open("starwars.html", "_blank");
+}

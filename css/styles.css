@@ -156,6 +156,7 @@ footer{
     border: solid 2px black;
     border-radius: 20px;
     color: black;
+    font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     padding-right: 10px;
     font-size: 1.5vw;
@@ -169,6 +170,7 @@ footer{
 .github-button{
     text-decoration: none;
     display: flex;
+    font-weight: bold;
     justify-content: space-between;
     align-items: center;
     border: solid 2px black;
@@ -188,6 +190,7 @@ footer{
     text-decoration: none;
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
     align-items: center;
     border: solid 2px black;
     border-radius: 20px;
@@ -203,7 +206,104 @@ footer{
     background-color: rgb(220, 218, 218);
 }
 
+#about{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
 
+#about h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4.5rem;
+}
+#about h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+}
+#about h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.75rem;
+    font-weight: normal;
+}
+.years{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+}
+#about p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: start
+}
+.education{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+
+}
+.umlogo img{
+   height: 15vw;
+   border-radius: 5px;
+}
+
+.me p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+.goals p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+#skills h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cl{
+    display: flex;
+    align-items: center;
+    border: solid 1px rgb(182, 177, 177);
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(167, 86, 86, 0.5);
+    width: 20vh;
+    height: 20vh;
+}
+
+.skill{
+    width: 11vh;
+}
+.css2{
+    width: 8vh;
+}
+.sql2{
+    width: 15vh;
+}
+.tf{
+    width: 14vh;
+}
+.pt{
+    width: 14vh;
+}
+.panda{
+    width: 15vh;
+}
+
+#skills p{
+    padding-top: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
 .projects {
     display: flex;
     flex-wrap: wrap; 
@@ -217,11 +317,9 @@ footer{
 }
 
 .project {
-    border: solid 2px rgb(186, 186, 186);
-    border-radius: 20px;
+    border: solid 3px rgb(186, 186, 186);
     width: 450px; 
     box-sizing: border-box;
-    background-color: rgb(250, 250, 250);
 }
 
 .project h2 {
@@ -253,8 +351,6 @@ footer{
 
 .head_image{
     width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     border-bottom: solid 3px rgb(186, 186, 186);
 }
 
@@ -285,8 +381,55 @@ footer{
 .r{
     height: 4rem;
 }
+
+#courses h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4.5rem;
+}
+.class-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.course{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px rgb(182, 177, 177);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(167, 86, 86, 0.5);
+    width: 35vh;
+}
+.course h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+}
+.course h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.85rem;
+    text-align: center;
+}
+.course p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.class-l{
+    width: 5vw;
+}
+.css-l{
+    width: 3.7vw;
+}
+.sql-l{
+    width: 8vw;
+}
+
 #music-area{
-    border: solid 2px black;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -323,6 +466,10 @@ footer{
     cursor: pointer;
 }
 
+.js-items{
+    display: flex;
+    justify-content: center;
+}
 #js-playground h1{
     font-size: 4rem;
     font-family: 'Open Sans', sans-serif;
@@ -416,7 +563,24 @@ footer{
     background-color: rgb(207, 137, 6);
 }
 
-.contact{
+.starwars{
+    border: solid black 2px;
+    display:flex;
+    flex-direction: column;
+}
+.starwars button{
+    background-color: white;
+    width: 40%;
+    height: 10rem;
+}
+.starwars button:hover{
+    background-color: rgb(225, 221, 221);
+    
+}
+.crawl-img{
+    width: 80%;
+}
+#contact{
     display: flex;
     flex-direction: column;
     border: solid 2px black;
@@ -429,7 +593,7 @@ footer{
     display: flex;
     flex-direction: column;
 }
-.contact button[type="submit"]{
+#contact button[type="submit"]{
     background-color: #a4abb3;
     color: white;
     border: none;
@@ -440,7 +604,7 @@ footer{
     width: 40%;
     font-family: 'Open Sans', sans-serif;
 }
-.contact input[type="email"], .contact input[type="text"] {
+#contact input[type="email"], #contact input[type="text"] {
     width: 90%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -449,7 +613,7 @@ footer{
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
 }
-.contact textarea{
+#contact textarea{
     display: flex;
     width: 90%;
     padding: 10px;
@@ -462,6 +626,6 @@ footer{
     font-size: 15px;
 }
 
-.contact button[type="submit"]:hover {
+#contact button[type="submit"]:hover {
     background-color: #5d5e60;
 }
