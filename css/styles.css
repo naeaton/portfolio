@@ -506,7 +506,24 @@ footer{
 .js-items{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
+.weather-content{
+    border: solid 2px black;
+    border-radius: 20px;
+}
+.weather-content h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5vw;
+    padding: 10px;
+    text-decoration: none;
+}
+.weather-content p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2vw;
+    padding: 10px;
+}
+
 
 #js-playground h1{
     font-size: 4rem;

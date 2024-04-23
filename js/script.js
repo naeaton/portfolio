@@ -54,7 +54,7 @@ function openStarWars(){
     window.open("starwars.html", "_blank");
 }
 
-const apiKey = process.env.API_KEY;
+const apiKey = '6c7ee377f5948a672a700ae586c41e4b';
 
 const city = 'Ann Arbor';
 const countryCode = 'US';
