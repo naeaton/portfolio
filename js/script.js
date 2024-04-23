@@ -53,3 +53,30 @@ const display = document.getElementById("display");
 function openStarWars(){
     window.open("starwars.html", "_blank");
 }
+
+const apiKey = process.env.API_KEY;
+
+const city = 'Ann Arbor';
+const countryCode = 'US';
+
+const url = `http://api.openweathermap.org/data/2.5/weather?q=${city},${countryCode}&appid=${apiKey}`;
+
+fetch(url)
+    .then(response => {
+        if(response.ok) {
+            return response.json();
+        } else{
+            throw new Error('Failed to retrieve weather data.');
+        }
+    })
+    .then(data => {
+        const kelvin = data.main.temp;
+        const description = data.weather[0].description;
+
+        const temp = (kelvin - 273.15) * 9/5 + 32;
+        document.getElementById('temp').textContent = `Temperature: ${Math.round(temp)} °F`;
+        document.getElementById('description').textContent = `Description: ${description}`;
+    })
+    .catch(error => {
+        console.error(error.message);
+    });
